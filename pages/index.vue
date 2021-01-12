@@ -19,7 +19,7 @@
 export default {
     async asyncData({ $axios }) {
         try {
-            let response = await $axios.$get("/api/products");
+            let response = await $axios.$get("http://localhost:3000/api/products");
             return {
                 // products: [{'id':1, 'sentence':"first thing that comes to mind"}]
                 products: response.products
